@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>using css grid </title>
+        <style>
+            body{
+                background-color: #fff;
+                text-align: center;
+            }
+            #content{
+                display: grid;
+              grid-template-columns: repeat(6,1fr);
+              grid-template-rows: repeat(4,minmax(150px,auto));
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                max-width: 960px;
+                margin:0 auto;
+            }
+            #content div{
+                background: #3bbced;
+                padding: 30px;
+             
+            }
+           #content div:nth-child(even){
+               background: #777;
+           }
+           .one{
+            
+               grid-column: 1/3;
+           }
+           .two{
+               grid-column: 3/7;
+           }
+           .three{
+               grid-row: 2/4;
+               grid-column: 1/4;
+           }
+           .four{
+               grid-row:2/4;
+               grid-column: 4/7;
+           }
+   
+        </style>
+    </head>
+<body>
+    <div id="content">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="night">8</div>
+        <div class="eight">9</div>
+
+
+    </div>
+</body>
+
+</html>
